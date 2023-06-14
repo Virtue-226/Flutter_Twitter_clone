@@ -30,6 +30,10 @@ class SlideLeftRoute<T> extends MaterialPageRoute<T> {
     if (settings.name == "SplashPage") {
       return child;
     }
+
+    // return SlideTransition(position: Tween<Offset>(begin: const Offset(1.0, 0.0), end : Offset.zero).animate(CurvedAnimation(parent: animation, curve: Curves.fastOutSlowIn))),
+    //  child : child,
+    //  )
     return SlideTransition(
       position: Tween<Offset>(
         begin: const Offset(1.0, 0.0),
